@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class LocationList extends Component {
+class LocationList extends Component {
     render() {
         return (
             <section className="locations">
@@ -18,3 +18,5 @@ export default class LocationList extends Component {
         );
     }
 }
+
+export default LocationList

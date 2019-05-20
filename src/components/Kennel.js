@@ -27,12 +27,22 @@ class Kennel extends Component {
     ]
 
     animalsFromAPI = [
-        { id: 1, name: "oskar", breed: "American Bulldog"},
+        { id: 1, name: "Oskar", breed: "American Bulldog"},
         { id: 2, name: "Tina", breed: "Pure Mute"},
         { id: 3, name: "Roxy", breed: "Pitbull"}
     ]
 
+    ownersFromAPI = [
+        { id: 1, name: "Ryan Tanay" },
+        { id: 2, name: "Emma Beaton" },
+        { id: 3, name: "Dani Adkins" },
+        { id: 4, name: "Adam Oswalt" },
+        { id: 5, name: "Fletcher Bangs" },
+        { id: 6, name: "Angela Lee" }
+    ]
+
     state = {
+        owners: this.ownersFromAPI,
         employees: this.employeesFromAPI,
         locations: this.locationsFromAPI,
         animals: this.animalsFromAPI

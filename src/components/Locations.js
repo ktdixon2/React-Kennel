@@ -3,12 +3,18 @@ import React, { Component } from 'react';
 export default class LocationList extends Component {
     render() {
         return (
-            <article>
-                <h1>Location List</h1>
-                <section>Nashville, TN</section>
-                <section>Knoxville, TN</section>
-                <section>Memphis, TN</section>
-            </article>
+            <section className="locations">
+                <h1>Locations</h1>
+                {
+                this.props.locations.map(location =>
+                    <div key={location.id}>
+                        <h4>{location.name}</h4>
+                        <p>{location.address}</p>
+                    </div>
+                )
+                }
+
+            </section>
         );
     }
 }

@@ -1,0 +1,14 @@
+{
+    "employees": [
+        { "id": 1, "name": "Jessica Younker" },
+        { "id": 2, "name": "Jordan Nelson" },
+        { "id": 3, "name": "Zoe LeBlanc" },
+        { "id": 4, "name": "Blaise Roberts" }
+    ], 
+    "animals": [
+        { "id": 1, "type": "Cat", "name": "MurderCar" },
+        { "id": 2, "type": "Dog", "name": "TurdMuncher" },
+        { "id": 3, "type": "Monkey", "name": "Shorty" },
+        { "id": 4, "type": "Turtle", "name": "Flash"}
+    ]
+}

@@ -3,6 +3,7 @@ import React, { Component } from "react"
 import AnimalsList from './Animals'
 import LocationList from './Locations'
 import EmployeeList from './employee/EmployeeList'
+import AnimalManager from "../modules/AnimalManager"
 
 
 class ApplicationViews extends Component {
@@ -38,9 +39,16 @@ class ApplicationViews extends Component {
     state = {
         employees: this.employeesFromAPI,
         locations: this.locationsFromAPI,
-        animals: this.animalsFromAPI,
+        animals: [],
         owners: this.ownersFromAPI
     }
+
+    componentDidMount() {
+        const newState = {};
+        AnimalManager.getAll()
+            .then(animals => newState.animals = animals)
+            .then(() => this.setState(newState))
+        }
 
     render() {
         return (
